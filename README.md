@@ -2,9 +2,10 @@ Making sense of rCCA, with `pyrcca`, `cca` in `scikit-learn`, and the R librarie
 
 ### Definitions
 
-For each vector **x<sub>1</sub>**...**x<sub>n</sub>** and **y<sub>1</sub>**...**y<sub>m</sub>** in input matrices **X** and **Y** respectively, canonical correlation analysis constructs two **canonical variates**: CVX<sub>1</sub> = a<sub>1</sub>x<sub>1</sub> + … + a<sub>p</sub>x<sub>p</sub> and CVY<sub>1</sub> = b<sub>1</sub>y<sub>1</sub> + … + b<sub>q</sub>y<sub>q</sub>. 
+For each vector **x<sub>1</sub>**...**x<sub>n</sub>** and **y<sub>1</sub>**...**y<sub>m</sub>** in input matrices **X** and **Y** respectively: 
 
-* The **canonical weights** `a<sub>1</sub>…a<sub>n</sub>` and `b<sub>1</sub>…b<sub>m</sub>` are chosen so that they maximize the correlation between the canonical variates `CVX<sub>1</sub>` and `CVY<sub>1</sub>`. The weights themselves don't mean much, so don't read too much into them. 
+* canonical correlation analysis constructs two **canonical variates**: CVX<sub>1</sub> = a<sub>1</sub>x<sub>1</sub> + … + a<sub>p</sub>x<sub>p</sub> and CVY<sub>1</sub> = b<sub>1</sub>y<sub>1</sub> + … + b<sub>q</sub>y<sub>q</sub>. 
+* The **canonical weights** a<sub>1</sub>…a<sub>n</sub> and b<sub>1</sub>…b<sub>m</sub> are chosen so that they maximize the correlation between the canonical variates CVX<sub>1</sub> and CVY<sub>1</sub>. The weights themselves don't mean much, so don't read too much into them. 
 * The **canonical loadings** are the correlations between the original variables and the canonical variates. 
 
 
